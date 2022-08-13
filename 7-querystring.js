@@ -4,6 +4,8 @@ const { products } = require('./data')
 const app = express()
 
 //http://localhost:5000/api/v1/query?limit=2&search=al
+
+//Can have only once response per request
 app.get('/api/v1/query', (req, res) => {
     //console.log(req.query);
     const { search, limit } = req.query
